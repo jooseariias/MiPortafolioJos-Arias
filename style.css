@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* MENU DE NAVEGACION */
+
+nav {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+}
+.container h3{
+    margin-left: 30px;
+
+}
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    
+}
+
+.links .link a:hover {
+    text-decoration: underline;
+}
+
+.toggle {
+    color: #070707;
+    margin-right: 20px;
+    font-size: 50px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .1s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* QUIEN SOY Y GIT */
+
+.Cont-Uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(https://codenotch.com/blog/wp-content/uploads/2018/12/condicionales-y-ciclos-codenotch-1200x675.jpg);
+    background-size: cover;
+    background-position: 100%;
+    padding-top: 80px;
+}
+
+.Cont-Uno h1 {
+ font-size: 100px;
+ color: rgb(255, 255, 255);
+ font-family: 'Cabin Sketch', cursive;
+
+
+}
+
+.Cont-Uno h2 {
+    font-size: 70px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Cabin Sketch', cursive;
+   }
+   
+/*-----------Tecnologias-------------*/
+
+section{
+    height: 99vh;
+    text-align: center;
+    
+}
+
+section h2{
+    font-size: 50px;
+    padding-top: 80px;
+    font-family: 'Cabin Sketch', cursive;
+    padding-bottom: 50px;
+}
+
+
+
+.Cont-Tegnologias{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Cont-Tegnologias h3{
+    font-size: 35px;
+    font-family: 'Cabin Sketch', cursive;
+    
+}
+
+
+
+.Cont-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.Cont-img img{
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+    
+}
+
+/*------Proyectos--------*/
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+
+.Cont-Proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+   ;
+}
+
+.Cont-Proyectos a img {
+width: 400px;
+height: 250px;
+margin-right: 10px;
+
+border: solid black 3px;
+}
+
+.Cont-Proyectos a img:hover {
+ transform: scale(1.1);
+    }
+
+/*--------Contactos----*/
+
+.Cont-contactos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80vh;
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_960_720.jpg);
+    background-size: cover;
+}
+
+
+.Cont-Contactos-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    
+}
+.Cont-Contactos-img img{
+ width: 50px;
+ 
+}
+
+.img-letras{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.email-t{
+  color: #fffdfd;
+    margin-top: 70px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+input{
+    width: 250px;
+    height: 25px;
+}
+
+
+textarea{
+    resize:none;
+    width: 300px;
+    height: 250px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+button{
+    padding: 6px 15px;
+    background-color: rgb(28, 135, 230);
+    border: none;
+    border-radius: 3px;
+    margin-top: 13px;
+}
+
+p{
+    color: #fffdfd;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1200px){
+    .toggle {
+        display: inline-block;   
+    }
+
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #ebecee;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 300px);
+        width: 100%;
+        z-index: 1;
+        top: -100vh;
+        transition: .5s;
+        
+    }
+
+    .link{
+        margin-top: 40px;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .links .link:hover {
+        background: #d6d7d8;
+    }
+
+   
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .Cont-Tegnologias{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Cont-img{
+        margin-top: 45px;
+        margin-left: 50px;
+    }
+    .Back{
+        margin-top: 25px;
+    }
+
+    .Cont-Proyectos a img {
+       margin-top: 8px;
+    }
+
+    .contenedor-c{
+        margin-top:260px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Cont-contactos{
+        display: flex;
+        flex-direction: column;
+        height: 1150px;
+    }
+.Cont-Contactos-img{
+    margin: 0px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.cont-formulario{
+    margin: 0px;
+   
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .Cont-Uno h1 {
+        font-size: 75px;
+        color: rgb(255, 255, 255);
+        font-family: 'Cabin Sketch', cursive;
+        text-align: center;
+       }
+
+       .Cont-Uno h2 {
+        font-size: 65px;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Cabin Sketch', cursive;
+       }
+
+    .Titulo-p{
+        margin-top: 120px;
+        margin-bottom: 25px;
+    }
+    .Titulo-C{
+    margin-top: 250px;
+    }
+      
+}
+}
