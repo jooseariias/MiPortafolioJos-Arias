@@ -343,3 +343,40 @@ p{
       
 }
 }
+
+
+
+@media screen and (max-width: 380px){
+
+
+    .Cont-Uno h1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        font-family: 'Cabin Sketch', cursive;
+        text-align: center;
+       }
+
+       .Cont-Uno h2 {
+        font-size: 40px;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Cabin Sketch', cursive;
+       }
+
+
+
+
+    .Titulo-p{
+        margin-top: 450px;
+    }
+
+    .Titulo-C{
+        margin-top: -200px;
+    }
+    .Cont-Proyectos a img {
+        width: 150px;
+        height: 100px;
+     }
+
+    
+}
