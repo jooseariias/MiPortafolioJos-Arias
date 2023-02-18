@@ -228,6 +228,10 @@ button{
     border-radius: 3px;
     margin-top: 13px;
 }
+button:hover{
+    cursor: pointer;
+    background-color: rgb(110, 182, 182);
+}
 
 p{
     color: #fffdfd;
